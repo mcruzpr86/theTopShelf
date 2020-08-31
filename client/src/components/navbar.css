@@ -1,0 +1,24 @@
+.Navbar {
+    position: fixed;
+    width: 100%;
+    background: red;
+    top: 0;
+    left: 0;
+}
+.navbar_logo {
+    position: fixed;
+    width: 20%;
+}
+.navbar_login {
+    position: fixed;
+    width: 20%
+}
+.navigation_bar {
+    position: fixed;
+    width: 20%;
+}
+.nav_bar {
+    position: fixed;
+    width: 20%
+}
+
