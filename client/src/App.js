@@ -1,18 +1,22 @@
 import React from 'react';
-import Navbar from './Components/navbar'
-
-import Logo from './Components/logoandimage/logoandimage';
+import Navbar from './components/Navbar/navbar'
+import Logo from './components/logoandimage/logoandimage';
 import './App.css';
+import Dmenu from './components/DropMenu';
+
 
 function App() {
   return (
+
+    
     <div className="App">
-      <Navbar />
-      <p>NAVIGATION BAR</p>
+      
       <div>
-        <Logo />
+      <Navbar />
+      <Logo />
+      <Dmenu />
       </div>
-    </div>
+     </div>
   );
 }
 
