@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar/navbar'
 import Logo from './components/logoandimage/logoandimage';
 import './App.css';
+import Slider from './components/carousel/Slider'
 import * as ReactBootStrap from "react-bootstrap";
 
 
@@ -38,6 +39,7 @@ function App() {
             </ReactBootStrap.Nav>
           </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Navbar>
+        <Slider />
       </div>
     </div>
   );
