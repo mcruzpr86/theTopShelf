@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Logo from './components/logoandimage/logoandimage';
 import './App.css';
-// import * as ReactBootStrap from "react-bootstrap";
-
+import Slider from './components/carousel/Slider'
+import * as ReactBootStrap from "react-bootstrap";
 
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
 
     <div className="App">
       <div>
-        
+
         <Logo />
         <Navbar />
 
-        
+
       </div>
     </div>
   );
