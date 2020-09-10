@@ -5,7 +5,7 @@ function Logo() {
 
     return (
         <div> 
-            <h1 className='logo'>The Top Shelf</h1>
+            <a href="/" className='logo'>The Top Shelf</a>
         </div>
     )
 }
