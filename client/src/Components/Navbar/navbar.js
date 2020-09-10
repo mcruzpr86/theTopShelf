@@ -5,7 +5,7 @@ function Navbar() {
     return (
 
         <ReactBootStrap.Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
-            <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
+       
             <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
                 <ReactBootStrap.Nav className="mr-auto">
                     <ReactBootStrap.NavDropdown title="Explore" id="collasible-nav-dropdown">
