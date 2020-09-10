@@ -1,5 +1,5 @@
 {
-  "name": "theTopShelf",
+  "name": "thetopshelf",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/mcruzpr86/theTopShelf#readme",
   "dependencies": {
+    "bootstrap": "^4.5.2",
     "express": "^4.17.1",
-    "mongo": "^0.1.0"
+    "mongo": "^0.1.0",
+    "react-bootstrap": "^1.3.0"
   }
 }

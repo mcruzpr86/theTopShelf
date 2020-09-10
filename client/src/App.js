@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/navbar'
 import Logo from './components/logoandimage/logoandimage';
 import './App.css';
 import * as ReactBootStrap from "react-bootstrap";
+import Footer from './components/footer/footer.js'
 
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
     <div className="App">
       <div>
         <Navbar />
-        
-        
+
+
         <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <ReactBootStrap.Navbar.Brand href="#home">React-Bootstrap</ReactBootStrap.Navbar.Brand>
           <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
