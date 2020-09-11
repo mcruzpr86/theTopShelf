@@ -1,9 +1,15 @@
 import React from 'react';
-import Navbar from './components/Navbar/navbar'
+import Navbar from './components/Navbar/navbar';
 import Logo from './components/logoandimage/logoandimage';
+import MainContent from './components/MainContent/maincontent';
 import './App.css';
+import Slider from './components/carousel/Slider';
 import * as ReactBootStrap from "react-bootstrap";
+<<<<<<< HEAD
 import Footer from './components/footer/footer.js'
+=======
+import ImgLogo from './components/imgLogo/imgLogo'
+>>>>>>> 5d5361bf0db407bcda558ad88fb0c333fa9182c8
 
 
 function App() {
@@ -12,7 +18,10 @@ function App() {
 
     <div className="App">
       <div>
+        <ImgLogo />
+        <Logo />
         <Navbar />
+<<<<<<< HEAD
 
 
         <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -39,6 +48,12 @@ function App() {
             </ReactBootStrap.Nav>
           </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Navbar>
+=======
+        <Slider />
+        <MainContent />
+
+
+>>>>>>> 5d5361bf0db407bcda558ad88fb0c333fa9182c8
       </div>
     </div>
   );
