@@ -1,4 +1,6 @@
 import React from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
+import LoginButton from './LoginButton';
 import * as ReactBootStrap from "react-bootstrap";
 
 
@@ -22,7 +24,8 @@ function Navbar() {
                 </ReactBootStrap.Nav>
 
                 <ReactBootStrap.Nav>
-                    <ReactBootStrap.Nav.Link href="./">Log In</ReactBootStrap.Nav.Link>
+                    <ReactBootStrap.Nav.Link href="./LoginButton.js">Log In/Register</ReactBootStrap.Nav.Link>
+                    <LoginButton/>
                     <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
                         Dank memes
         </ReactBootStrap.Nav.Link>
