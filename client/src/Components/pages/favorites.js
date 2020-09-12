@@ -1,12 +1,13 @@
 import React from 'react';
+import "./pages.css"
 
 
 function Favorites() {
   return (
 
 
-    <div className="Favorites">
-      <div>
+    <div >
+      <div className="Favorites">
         
         
         
