@@ -2,6 +2,7 @@ import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import LoginButton from './LoginButton';
 import * as ReactBootStrap from "react-bootstrap";
+import Home from "../pages/home"
 
 
 function Navbar() {
@@ -24,11 +25,15 @@ function Navbar() {
                 </ReactBootStrap.Nav>
 
                 <ReactBootStrap.Nav>
+<<<<<<< HEAD
                     <ReactBootStrap.Nav.Link href="./LoginButton.js">Log In/Register</ReactBootStrap.Nav.Link>
                     <LoginButton/>
                     <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
                         Dank memes
         </ReactBootStrap.Nav.Link>
+=======
+                    <ReactBootStrap.Nav.Link href="./">Log In</ReactBootStrap.Nav.Link>
+>>>>>>> 901be0b8c12ac9598b419587896a52ea9ac328a1
                 </ReactBootStrap.Nav>
             </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Navbar>
