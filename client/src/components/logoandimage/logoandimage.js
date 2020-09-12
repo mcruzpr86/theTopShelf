@@ -5,7 +5,7 @@ function Logo() {
 
     return (
         <div> 
-            <a href="/" className='logoTitle'>The Top Shelf</a>
+            <a href="/" className='logoTitle' style={{textDecoration:'none', color: 'maroon'}}>The Top Shelf</a>
         </div>
     )
 }

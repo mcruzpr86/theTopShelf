@@ -18,14 +18,15 @@ function App() {
         <div>
           <ImgLogo />
           <Logo />
-          <Navbar />
-              <Link to= "/" style={{ textDecoration: 'none', color: 'maroon', margin: '10px', textAlign: 'left' }}> Home</Link>
+          <Link to= "/" style={{ textDecoration: 'none', color: 'maroon', margin: '10px', flexDirection: 'row', marginLeft: '90%'}}> Home</Link>
               
-              <Link to= "/favorites" style={{ textDecoration: 'none', color: 'maroon', margin: '10px', textAlign: 'left' }}> Favorites</Link> 
+              <Link to= "/favorites" style={{ textDecoration: 'none', color: 'maroon', margin: '10px',flexDirection: 'row', marginLeft: '0%' }}> Favorites</Link> 
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/favorites" component={Favorites} />
           </Switch>
+
+          <Navbar />
           <Slider />
           <MainContent />
        
