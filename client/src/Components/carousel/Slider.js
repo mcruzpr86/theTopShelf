@@ -3,7 +3,7 @@ import './slider.scss';
 import ImgComp from "./ImgCom";
 import i1 from "./tsImages/slide1.jpg"
 import i2 from "./tsImages/slide2.jpg"
-import i3 from "./tsImages/slide3.jpeg"
+import i3 from "./tsImages/slide3.jpg"
 import i4 from "./tsImages/slide4.jpg"
 import i5 from "./tsImages/slide5.jpg"
 
