@@ -1,14 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-import "./navbar.css";
-
-
-const Navbar = () => (
-    <header className='navigation_bar' >
-        <nav className='nav_bar'></nav>
-    </header>
-)
-=======
 import * as ReactBootStrap from "react-bootstrap";
 
 
@@ -16,7 +6,7 @@ function Navbar() {
     return (
 
         <ReactBootStrap.Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
-       
+
             <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
                 <ReactBootStrap.Nav className="mr-auto">
                     <ReactBootStrap.NavDropdown title="Explore" id="collasible-nav-dropdown">
@@ -42,7 +32,6 @@ function Navbar() {
     )
 
 }
->>>>>>> 5d5361bf0db407bcda558ad88fb0c333fa9182c8
 
 
 export default Navbar;
