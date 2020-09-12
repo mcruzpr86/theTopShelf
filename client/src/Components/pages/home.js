@@ -1,12 +1,13 @@
 import React from 'react';
+import "./pages.css"
 
 
 function Home() {
   return (
 
 
-    <div className="Home">
-      <div>
+    <div >
+      <div className="Home">
        
 
       </div>

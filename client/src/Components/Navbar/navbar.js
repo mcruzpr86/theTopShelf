@@ -1,5 +1,6 @@
 import React from 'react';
 import * as ReactBootStrap from "react-bootstrap";
+import Home from "../pages/home"
 
 
 function Navbar() {
@@ -23,9 +24,6 @@ function Navbar() {
 
                 <ReactBootStrap.Nav>
                     <ReactBootStrap.Nav.Link href="./">Log In</ReactBootStrap.Nav.Link>
-                    <ReactBootStrap.Nav.Link eventKey={2} href="#">
-                        Favorites
-                    </ReactBootStrap.Nav.Link>
                 </ReactBootStrap.Nav>
             </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Navbar>

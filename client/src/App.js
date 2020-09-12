@@ -19,23 +19,16 @@ function App() {
           <ImgLogo />
           <Logo />
           <Navbar />
-          <ul>
-            <li>
-              <Link to= "/"> Home</Link>
-            </li>
-            <li>
-            <Link to= "/favorites"> Favorites</Link>
-
-            </li>
-          </ul>
+              <Link to= "/" style={{ textDecoration: 'none', color: 'maroon', margin: '10px', textAlign: 'left' }}> Home</Link>
+              
+              <Link to= "/favorites" style={{ textDecoration: 'none', color: 'maroon', margin: '10px', textAlign: 'left' }}> Favorites</Link> 
           <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/favorites" component={Favorites} />
-      </Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/favorites" component={Favorites} />
+          </Switch>
           <Slider />
           <MainContent />
        
-      
       </div>
       </div>
     </Router>
