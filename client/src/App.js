@@ -7,12 +7,12 @@ import Slider from './components/carousel/Slider.js';
 import * as ReactBootStrap from "react-bootstrap";
 import ImgLogo from './components/imgLogo/imgLogo';
 import Home from './components/pages/home';
-import Account from './components/pages/account';
+import Account from './components/pages/userAccount';
 import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 
 function App() {
   return (
-
+    <div>
     <Router>
       <div className="App">
         <div>
@@ -33,6 +33,8 @@ function App() {
       </div>
       </div>
     </Router>
+</div>
+    
     
   );
 }
