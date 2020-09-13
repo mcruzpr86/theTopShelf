@@ -8,7 +8,8 @@ class Form extends Component {
 
         this.state = {
             username: '',
-            comments: ''
+            comments: '',
+            topic: 'drink special'
         }
     }   
 
@@ -18,16 +19,29 @@ class Form extends Component {
         })
     }
 
-    handleCommentsChange = event => (
+    handleCommentsChange = event => {
         this.setState({
             comments: event.target.value  
           })
   
-    )
+        }
+
+    handleTopicChange = event => {
+        this.setState({
+            topic: event.target.value  
+          })
+
+        }
+
+    handleSubmit (event) {
+        alert('Thank you')
+        event.preventDefault()
+    }
 
     render() {
+        const { username, comments, topic} = this.state
         return (
-            <form className='form'>
+            <form onsubmit={this.handleSubmit} className='form'>
                 <div>
                     <h3>
                         Contact Us
@@ -37,14 +51,23 @@ class Form extends Component {
                     </label>
                     <input 
                         type= 'text' 
-                        value={this.state.username} 
+                        value={username} 
                         onChange={this.handleUsernameChange}
                     />
                 </div>
                 <div>
                     <label>Comments</label>
-                    <textarea value={this.state.comments} onChange={this.handleCommentsChange}></textarea>
+                    <textarea value={comments} onChange={this.handleCommentsChange}></textarea>
                 </div>
+                <div>
+                    <label>Topic</label>
+                    <select value={topic} onChange={this.handleTopicChange}>
+                       <option value="drink special">Drink Specials</option> 
+                       <option value="account">Account</option> 
+                       <option value="help">Help</option> 
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
             </form> 
         )
     }
