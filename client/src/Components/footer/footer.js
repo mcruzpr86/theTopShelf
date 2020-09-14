@@ -1,39 +1,42 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import "./footer.css";
+
 
 const Footer = () => {
     return (
-        <MDBFooter color="blue" className="font-small pt-4 mt-4">
-            <MDBContainer fluid className="text-center text-md-left">
-                <MDBRow>
-                    <MDBCol md="6">
-                        <h5 className="title">Footer Content</h5>
-                        <p>
-                            Here you can use rows and columns here to organize your footer
-                            content.
-            </p>
-                    </MDBCol>
-                    <MDBCol md="6">
-                        <h5 className="title">Links</h5>
-                        <ul>
-                            <li className="list-unstyled">
-                                <a href="#!">Link 1</a>
-                            </li>
-                            <li className="list-unstyled">
-                                <a href="#!">Link 2</a>
-                            </li>
-                            <li className="list-unstyled">
-                                <a href="#!">Link 3</a>
-                            </li>
-                            <li className="list-unstyled">
-                                <a href="#!">Link 4</a>
-                            </li>
+        <div className="main-footer">
+            <div className="container">
+                <div className="row">
+                    {/* Column1 */}
+                    <div className="col">
+                        <h4>About</h4>
+                        <ul className="list-unstyled">
+                            <li>Why Sign Up</li>
+                            <li>Drink of the Day</li>
+                            <li>Liquor of the Week</li>
                         </ul>
-                    </MDBCol>
-                </MDBRow>
-            </MDBContainer>
-
-        </MDBFooter>
+                    </div>
+                    {/* Column2 */}
+                    <div className="col">
+                        <h4>Drinks</h4>
+                        <ul className="list-unstyled">
+                            <li>Whiskey</li>
+                            <li>Vodka</li>
+                            <li>Tequila</li>
+                        </ul>
+                    </div>
+                    {/* Column3 */}
+                    <div className="col">
+                        <h4>Sign In</h4>
+                        <ul className="list-unstyled">
+                            <li>Favorites</li>
+                            <li>Account Settings</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
 
