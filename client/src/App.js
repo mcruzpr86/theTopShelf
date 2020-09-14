@@ -7,12 +7,12 @@ import Slider from './components/carousel/Slider.js';
 import * as ReactBootStrap from "react-bootstrap";
 import ImgLogo from './components/imgLogo/imgLogo';
 import Home from './components/pages/home';
-import Favorites from './components/pages/favorites';
+import Account from './components/pages/userAccount';
 import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 
 function App() {
   return (
-
+    <div>
     <Router>
       <div className="App">
         <div>
@@ -20,10 +20,10 @@ function App() {
           <Logo />
           <Link to= "/" style={{ textDecoration: 'none', color: 'maroon', margin: '10px', flexDirection: 'row', marginLeft: '90%'}}> Home</Link>
               
-              <Link to= "/favorites" style={{ textDecoration: 'none', color: 'maroon', margin: '10px',flexDirection: 'row', marginLeft: '0%' }}> Favorites</Link> 
+              <Link to= "/account" style={{ textDecoration: 'none', color: 'maroon', margin: '10px',flexDirection: 'row', marginLeft: '0%' }}> Account</Link> 
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/favorites" component={Favorites} />
+            <Route path="/account" component={Account} />
           </Switch>
 
           <Navbar />
@@ -33,6 +33,8 @@ function App() {
       </div>
       </div>
     </Router>
+</div>
+    
     
   );
 }
