@@ -1,13 +1,13 @@
 import React from 'react';
-import Navbar from './componentsv2/Navbar/navbar';
-import Logo from './componentsv2/logoandimage/logoandimage';
-import MainContent from './componentsv2/MainContent/maincontent';
+import Navbar from './components/Navbar/navbar';
+import Logo from './components/logoandimage/logoandimage';
+import MainContent from './components/MainContent/maincontent';
 import './App.css';
-import Slider from './componentsv2/carousel/Slider.js.js';
+import Slider from './components/carousel/Slider.js.js.js';
 import * as ReactBootStrap from "react-bootstrap";
-import ImgLogo from './componentsv2/imgLogo/imgLogo';
-import Home from './componentsv2/pages/home';
-import Account from './componentsv2/pages/userAccount';
+import ImgLogo from './components/imgLogo/imgLogo';
+import Home from './components/pages/home';
+import Account from './components/pages/userAccount';
 import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 
 function App() {
