@@ -24,7 +24,7 @@ function MainContent() {
     return (
         <>
             <div className="mainButton">
-                <ReactBootStrap.Button variant="secondary" onClick={() => getinfo()}>Show me the honey!</ReactBootStrap.Button>{' '}
+                <ReactBootStrap.Button variant="secondary" onClick={() => getinfo()}>Find a drink</ReactBootStrap.Button>{' '}
             </div>
             {choices.map(function (drink) {
                 return (
@@ -34,17 +34,17 @@ function MainContent() {
                                 <ReactBootStrap.Card.Body>
                                     <ReactBootStrap.Card.Title>{drink.strDrink}</ReactBootStrap.Card.Title>
                                     <ReactBootStrap.Card.Text type="text" maxLength="15">
-                                         Looks Good!:<img src={drink.strDrinkThumb}></img> 
-                                        
+                                        Looks Good!:<img className="drinkImg" src={drink.strDrinkThumb}></img>
+
                                     </ReactBootStrap.Card.Text>
                                     <ReactBootStrap.Card.Text type="text" maxLength="15">
-                                        
-                                         Try this out!: {drink.strInstructions}
+
+                                        Try this out!: {drink.strInstructions}
                                     </ReactBootStrap.Card.Text>
                                 </ReactBootStrap.Card.Body>
                             </ReactBootStrap.Card>
                             <div className="mainButton">
-                                <ReactBootStrap.Button variant="secondary" onClick={() => getinfo(drink)}>Show me the honey!</ReactBootStrap.Button>{' '}
+                                <ReactBootStrap.Button variant="secondary" onClick={() => getinfo(drink)}>Find me a drink!</ReactBootStrap.Button>{' '}
                             </div>
                         </div>
 
