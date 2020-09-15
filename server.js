@@ -10,7 +10,9 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+}
 
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/thetopshelfdb";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -52,6 +54,9 @@ app.get("/")
 //             res.json(err);
 //         });
 // });
+app.get("/", (req, res) =>
+    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+);
 
 // Route to get all User's and populate them with their notes
 app.post("/user", function (req, res) {
