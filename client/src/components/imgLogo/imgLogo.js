@@ -6,7 +6,7 @@ console.log(logo); // /logo.84287d09.png
 
 function ImgLogo() {
   
-  return <img className='imgLogo' src={logo} alt="Logo" />;
+  return <a href="/"><img className='imgLogo' src={logo} alt="Logo" /></a> ;
 }
 export default ImgLogo;
 

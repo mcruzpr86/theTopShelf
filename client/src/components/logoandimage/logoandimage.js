@@ -5,9 +5,10 @@ function Logo() {
 
     return (
         <div> 
-            <h1 className='logo'>The Top Shelf</h1>
+            <a href="/" className='logoTitle' style={{textDecoration:'none', color: 'maroon'}}>The Top Shelf</a>
         </div>
     )
 }
 
 export default Logo;
+
