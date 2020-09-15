@@ -5,7 +5,9 @@ import MainContent from './components/MainContent/maincontent';
 import './App.css';
 import Slider from './components/carousel/Slider.js';
 import * as ReactBootStrap from "react-bootstrap";
+import Footer from './components/footer/footer.js';
 import ImgLogo from './components/imgLogo/imgLogo';
+
 import Home from './components/pages/home';
 import Account from './components/pages/userAccount';
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
@@ -26,10 +28,19 @@ function App() {
               <Route path="/account" component={Account} />
             </Switch>
 
-            <Navbar />
-            <Slider />
-            <MainContent />
 
+            <div className="App">
+              <div>
+                <ImgLogo />
+                <Logo />
+                <Navbar />
+                <Slider />
+                <MainContent />
+                <Footer />
+
+
+              </div>
+            </div>
           </div>
         </div>
       </Router>
