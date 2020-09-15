@@ -18,3 +18,7 @@
     margin: 15px;
     flex-direction: column;
 }
+
+img {
+    width: fit-content;
+}
