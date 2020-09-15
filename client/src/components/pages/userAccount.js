@@ -1,23 +1,34 @@
 import React from 'react';
 import "./pages.css"
 import Form from '../form/form'
+import "../pages/pages.css"
+import Navbar from '../Navbar/navbar';
+import Logo from '../logoandimage/logoandimage';
+import '../pages/pages.css';
+import Slider from '../carousel/Slider.js';
+import * as ReactBootStrap from "react-bootstrap";
+import Footer from '../footer/footer.js';
+import ImgLogo from '../imgLogo/imgLogo';
+
+
 
 function userAccount() {
   return (
     
 
 <div>
-  <div >
-      <div className="Account">
-        <div className='container'>
-          <div className='row'>
-            <div className='col' >
-              <Form />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div>
+    <ImgLogo />
+    <Logo />
+    <Navbar />
+    <Slider />
+    <br></br>
+    <Form />
+    <hr></hr>
+    <Footer />
+
+  </div>
+
 </div>
 
   );

@@ -18,20 +18,6 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/thetopshelfd
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
-// When the server starts, create and save a new User document to the db
-// The "unique" rule in the User model's schema will prevent duplicate users from being added to the server
-// db.User.create({ name: "Ernest Hemingway" })
-//   .then(function(dbUser) {
-//     console.log(dbUser);
-//   })
-//   .catch(function(err) {
-//     console.log(err.message);
-//   });
-
-// Routes
-
-// Route for retrieving all Notes from the db
-
 app.get("/")
 
 
