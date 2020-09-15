@@ -26,10 +26,11 @@ function Navbar() {
 
                 <ReactBootStrap.Nav>
 
-                    <ReactBootStrap.Nav.Link href="./LoginButton.js">Log In/Register</ReactBootStrap.Nav.Link>
+                    
                     <LoginButton/>
                     <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
-                        Dank memes
+                    <LogoutButton/>
+                     Dank memes
         </ReactBootStrap.Nav.Link>
 
                 </ReactBootStrap.Nav>
