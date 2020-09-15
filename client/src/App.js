@@ -19,7 +19,6 @@ function App() {
         <div className="App">
           <div>
             <ImgLogo />
-            <Logo />
             <Link to="/" style={{ textDecoration: 'none', color: 'maroon', margin: '10px', flexDirection: 'row', marginLeft: '90%' }}> Home</Link>
 
             <Link to="/account" style={{ textDecoration: 'none', color: 'maroon', margin: '10px', flexDirection: 'row', marginLeft: '0%' }}> Account</Link>
@@ -36,6 +35,7 @@ function App() {
                 <Navbar />
                 <Slider />
                 <MainContent />
+                <hr></hr>
                 <Footer />
 
 
