@@ -19,6 +19,7 @@
     flex-direction: column;
 }
 
-img {
+.drinkImg {
     width: fit-content;
+    max-width: 400px;
 }
