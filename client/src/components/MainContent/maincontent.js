@@ -26,21 +26,17 @@ function MainContent() {
                 {choices.map(function (drink) {
                     return (
                         <div key={drink.strDrink} className="individualDrink col-12 col-sm-6 col-md-4">
-                            
+
                             <ReactBootStrap.Card>
                                 <ReactBootStrap.Card.Body className="drinkCard">
                                     <ReactBootStrap.Card.Title>{drink.strDrink}</ReactBootStrap.Card.Title>
-
                                     <ReactBootStrap.Card.Img className="drinkImg" src={drink.strDrinkThumb}></ReactBootStrap.Card.Img>
-
-
                                     <ReactBootStrap.Card.Text type="text">
-
                                         Try this out!: {drink.strInstructions}
                                     </ReactBootStrap.Card.Text>
                                     <div className="row">
-                                    <ReactBootStrap.Button variant="secondary" className="col-6" onClick={() => getinfo(drink)}>Find me a drink!</ReactBootStrap.Button>{' '}
-                                    <FaveButton />
+                                        <ReactBootStrap.Button variant="secondary" className="col-6" onClick={() => getinfo(drink)}>Find me a drink!</ReactBootStrap.Button>{' '}
+                                        <FaveButton />
                                     </div>
                                 </ReactBootStrap.Card.Body>
                             </ReactBootStrap.Card>
