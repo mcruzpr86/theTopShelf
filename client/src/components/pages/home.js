@@ -9,16 +9,16 @@ import * as ReactBootStrap from "react-bootstrap";
 import Footer from '../footer/footer.js';
 import ImgLogo from '../imgLogo/imgLogo';
 
-import Account from '../pages/userAccount';
+import ContactUs from './contactUs';
 
 
 function Home() {
   return (
 
 
-    <div >
+    <div>
       <div className="Home">
-      <div>
+        <div>
                 <ImgLogo />
                 <Logo />
                 <Navbar />
@@ -26,11 +26,7 @@ function Home() {
                 <MainContent />
                 <hr></hr>
                 <Footer />
-
-
-              </div>
-
-
+        </div>
       </div>
     </div>
   );

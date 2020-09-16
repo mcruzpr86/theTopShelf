@@ -12,7 +12,7 @@ import ImgLogo from '../imgLogo/imgLogo';
 
 
 
-function userAccount() {
+function ContactUs() {
   return (
     
 
@@ -34,4 +34,4 @@ function userAccount() {
   );
 }
 
-export default userAccount;
+export default ContactUs;
