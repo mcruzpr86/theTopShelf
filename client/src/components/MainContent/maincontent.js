@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import * as ReactBootStrap from "react-bootstrap";
 import "./mainContent.css";
+import FaveButton from '../FavoritesBtn/Favorites';
 
 
 const randomDrink = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
-const reciepieUrl = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
+
 
 function MainContent() {
     const [choices, setChoices] = useState([])
@@ -15,42 +16,39 @@ function MainContent() {
             console.log(choices)
         })
     }
-    // function getRecipieUrl(drink) {
-    //     axios.get(reciepieUrl + drink).then(function (response) {
-    //         setChoices(response.data.ingredients)
-    //         console.log(response.data.ingredients)
-    //     })
-    // }
+
     return (
         <>
-            <div className="mainButton">
+            {!choices.length ? <div className="mainButton">
                 <ReactBootStrap.Button variant="secondary" onClick={() => getinfo()}>Find a drink</ReactBootStrap.Button>{' '}
-            </div>
-            {choices.map(function (drink) {
-                return (
-                    <div key={drink.strDrink} className="individualDrink">
-                        <div className="choicesButton">
-                            <ReactBootStrap.Card style={{ width: '40rem' }}>
-                                <ReactBootStrap.Card.Body>
+            </div> : <></>}
+            <div className="row" style={{ backgroundColor: 'black' }}>
+                {choices.map(function (drink) {
+                    return (
+                        <div key={drink.strDrink} className="individualDrink col-12 col-sm-6 col-md-4">
+                            
+                            <ReactBootStrap.Card>
+                                <ReactBootStrap.Card.Body className="drinkCard">
                                     <ReactBootStrap.Card.Title>{drink.strDrink}</ReactBootStrap.Card.Title>
-                                    <ReactBootStrap.Card.Text type="text" maxLength="15">
-                                        Looks Good!:<img className="drinkImg" src={drink.strDrinkThumb}></img>
 
-                                    </ReactBootStrap.Card.Text>
-                                    <ReactBootStrap.Card.Text type="text" maxLength="15">
+                                    <ReactBootStrap.Card.Img className="drinkImg" src={drink.strDrinkThumb}></ReactBootStrap.Card.Img>
+
+
+                                    <ReactBootStrap.Card.Text type="text">
 
                                         Try this out!: {drink.strInstructions}
                                     </ReactBootStrap.Card.Text>
+                                    <div className="row">
+                                    <ReactBootStrap.Button variant="secondary" className="col-6" onClick={() => getinfo(drink)}>Find me a drink!</ReactBootStrap.Button>{' '}
+                                    <FaveButton />
+                                    </div>
                                 </ReactBootStrap.Card.Body>
                             </ReactBootStrap.Card>
-                            <div className="mainButton">
-                                <ReactBootStrap.Button variant="secondary" onClick={() => getinfo(drink)}>Find me a drink!</ReactBootStrap.Button>{' '}
-                            </div>
                         </div>
+                    )
+                })}
+            </div>
 
-                    </div>
-                )
-            })}
         </>
     )
 }

@@ -16,23 +16,18 @@ function Home() {
   return (
 
 
-    <div >
-      <div className="Home">
-      <div>
-                <ImgLogo />
-                <Logo />
-                <Navbar />
-                <Slider />
-                <MainContent />
-                <hr></hr>
-                <Footer />
 
+    <div className="Home">
+      <ImgLogo />
+      <Logo />
+      <Navbar />
+      <Slider />
+      <MainContent />
+      <hr></hr>
+      <Footer />
 
-              </div>
-
-
-      </div>
     </div>
+
   );
 }
 
