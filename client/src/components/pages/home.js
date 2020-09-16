@@ -15,7 +15,6 @@ import ContactUs from './contactUs';
 function Home() {
   return (
 
-
     <div>
       <div className="Home">
         <div>
@@ -28,7 +27,9 @@ function Home() {
                 <Footer />
         </div>
       </div>
+=
     </div>
+
   );
 }
 
