@@ -9,23 +9,25 @@ import * as ReactBootStrap from "react-bootstrap";
 import Footer from '../footer/footer.js';
 import ImgLogo from '../imgLogo/imgLogo';
 
-import Account from '../pages/userAccount';
+import ContactUs from './contactUs';
 
 
 function Home() {
   return (
 
-
-
-    <div className="Home">
-      <ImgLogo />
-      <Logo />
-      <Navbar />
-      <Slider />
-      <MainContent />
-      <hr></hr>
-      <Footer />
-
+    <div>
+      <div className="Home">
+        <div>
+                <ImgLogo />
+                <Logo />
+                <Navbar />
+                <Slider />
+                <MainContent />
+                <hr></hr>
+                <Footer />
+        </div>
+      </div>
+=
     </div>
 
   );
