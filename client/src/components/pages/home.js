@@ -8,7 +8,6 @@ import Slider from '../carousel/Slider.js';
 import * as ReactBootStrap from "react-bootstrap";
 import Footer from '../footer/footer.js';
 import ImgLogo from '../imgLogo/imgLogo';
-
 import ContactUs from './contactUs';
 
 
@@ -18,13 +17,13 @@ function Home() {
     <div>
       <div className="Home">
         <div>
-                <ImgLogo />
-                <Logo />
-                <Navbar />
-                <Slider />
-                <MainContent />
-                <hr></hr>
-                <Footer />
+          <ImgLogo />
+          <Logo />
+          <Navbar />
+          <Slider />
+          <MainContent />
+          <hr></hr>
+          <Footer />
         </div>
       </div>
 =

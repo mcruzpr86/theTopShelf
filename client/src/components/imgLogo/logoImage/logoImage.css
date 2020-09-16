@@ -1,8 +1,5 @@
 .imgLogo {
-
-    margin-right: 100%;
-    margin-bottom: -150px;
-    margin-top: -75px;
-    width: 250px;
-
+    background-color:grey;
+    max-width: 180px;
+    float: left;
 }
